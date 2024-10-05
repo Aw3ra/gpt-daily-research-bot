@@ -12,9 +12,6 @@ import asyncio
 import re
 from openai import OpenAI
 import nltk
-nltk.download('wordnet')
-nltk.download('punkt')
-nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import ast  # Add this import at the top of the file
