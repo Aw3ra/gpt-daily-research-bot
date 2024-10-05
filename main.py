@@ -17,11 +17,6 @@ from nltk.tokenize import word_tokenize
 import ast  # Add this import at the top of the file
 import io  # Add this import
 
-# Download necessary NLTK data (you may need to run this once)
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
-
 # Load the system prompt from the bot_instructions file
 with open('./bot_instructions', 'r') as file:
     system_prompt = file.read().strip()
