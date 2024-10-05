@@ -39,11 +39,7 @@ openai_client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 # Connect to your PostgreSQL database
 conn = psycopg2.connect(
-    host=os.getenv('DB_HOST'),
-    dbname=os.getenv('DB_DATABASE'),
-    user=os.getenv('DB_USER'),
-    password=os.getenv('DB_PASSWORD'),
-    port=os.getenv('DB_PORT')
+    os.getenv('DATABASE_URL')
 )
 cur = conn.cursor()
 
