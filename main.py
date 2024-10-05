@@ -20,7 +20,6 @@ import io  # Add this import
 # Download necessary NLTK data (you may need to run this once)
 nltk.download('punkt')
 nltk.download('stopwords')
-nltk.download('wordnet')
 
 # Load the system prompt from the bot_instructions file
 with open('./bot_instructions', 'r') as file:
